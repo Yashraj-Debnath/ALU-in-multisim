@@ -22,12 +22,13 @@ This ALU has two units, one is the Arithmetic Unit and othe ris a Logical unit.
 - The Arithmetic unit (AU) is made of 4 full adders connected to a select line M (for mode input).
 
 - The **Logical Unit** does bitwise logical operations such as AND, OR, XOR of two 4 bit binary numbers. Based on the selec lines s1*s0 combinations different modes can be chosen.
-| s1*s0 | MODE|
-|:-----:|:---:|
-|00|DISABLED|
-|01|AND|
-|10|OR|
-|11|XOR|
+  
+| s1*s0 | MODE   |
+|:-----:|:------:|
+|00     |DISABLED|
+|01     |AND     |
+|10     |OR      |
+|11     |XOR     |
 
 - The logical unit is comprised of four 4x1 MUX wher for each MUX  the 0th input line is grounded and 1st, 2nd and 3rd input is connected to AND, OR , XOR gate respectively for each bits for number A and B.
 
